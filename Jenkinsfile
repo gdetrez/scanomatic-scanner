@@ -4,6 +4,7 @@ pipeline {
       label 'scanner'
       args '-v /tmp:/tmp'
       image 'raspberry-sane-git:latest'
+      alwaysPull false
     }
     
   }
