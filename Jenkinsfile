@@ -1,10 +1,11 @@
 pipeline {
   agent {
     docker {
-      image 'raspberry-sane-git'
       label 'scanner'
-      args  '-v /tmp:/tmp'
+      args '-v /tmp:/tmp'
+      image 'raspberry-sane-git:latest'
     }
+    
   }
   stages {
     stage('Test') {
