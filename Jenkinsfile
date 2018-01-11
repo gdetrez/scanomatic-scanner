@@ -1,7 +1,7 @@
 pipeline {
   agent {
-    docker {
-      image 'phenomique/raspberry-sane-git'
+    dockerfile {
+      filename 'Dockerfile.test-armv7'
       label 'scanner'
       args '-v /tmp:/tmp'
       foo 'bar'
