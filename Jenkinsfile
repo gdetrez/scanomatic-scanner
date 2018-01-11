@@ -1,7 +1,7 @@
 pipeline {
   agent {
     dockerfile {
-      filename 'Dockerfile.test-armv7'
+      filename 'Dockerfile.jenkins-armv7'
       label 'scanner'
       args '-v /tmp:/tmp'
     }
