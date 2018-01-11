@@ -1,0 +1,3 @@
+FROM phenomique/raspberry-sane-git
+RUN apt-get install python3-pip
+RUN pip install tox
