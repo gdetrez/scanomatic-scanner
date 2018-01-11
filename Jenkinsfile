@@ -4,6 +4,7 @@ pipeline {
       image 'phenomique/raspberry-sane-git'
       label 'scanner'
       args '-v /tmp:/tmp'
+      foo 'bar'
     }
   }
   stages {
