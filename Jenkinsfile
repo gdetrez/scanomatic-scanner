@@ -10,6 +10,7 @@ pipeline {
     stage('Test') {
       steps {
         sh 'tox -- --with-scanner'
+        junit 'pytest.xml'
       }
     }
   }
