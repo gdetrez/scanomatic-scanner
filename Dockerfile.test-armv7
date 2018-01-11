@@ -3,4 +3,4 @@ RUN apt-get update \
     && apt-get install -y python3 python3-pip \
     && rm -rf /var/lib/apt/lists/*
 RUN pip3 install tox
-RUN useradd --uid 1001 --create-home
+RUN useradd --uid 1001 --create-home jenkins
