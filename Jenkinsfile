@@ -4,7 +4,6 @@ pipeline {
       filename 'Dockerfile.test-armv7'
       label 'scanner'
       args '-v /tmp:/tmp'
-      foo 'bar'
     }
   }
   stages {
