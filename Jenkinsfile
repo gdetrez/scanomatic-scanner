@@ -9,6 +9,7 @@ pipeline {
   stages {
     stage('Test') {
       steps {
+        sh 'pip install tox'
         sh 'tox -- --with-scanner'
       }
     }
