@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-      image 'raspberry-sane-git'
+      image 'phenomique/raspberry-sane-git'
       label 'scanner'
       args  '-v /tmp:/tmp'
     }
