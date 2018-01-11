@@ -3,7 +3,7 @@ pipeline {
     docker {
       image 'phenomique/raspberry-sane-git'
       label 'scanner'
-      args  '-v /tmp:/tmp'
+      args '-v /tmp:/tmp'
     }
   }
   stages {
